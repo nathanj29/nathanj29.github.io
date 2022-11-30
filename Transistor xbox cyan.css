@@ -1,6 +1,6 @@
 /*BEGIN Xbox One Controller Styling*/
 .controller.xbox {
-    background: url(https://i.imgur.com/4SK7MGC.png);
+    background: url(https://i.imgur.com/z8s3rKf.png);
     height: 630px;
     width: 750px;
     /*    margin-left: -375px;
@@ -140,7 +140,7 @@
 
 .xbox .button {
     position: absolute;
-    background: url(https://i.imgur.com/HbJsKcC.png);
+    background: url(https://i.imgur.com/5IrC9H0.png);
     width: 48px;
     height: 48px;
 }
@@ -192,7 +192,7 @@
 }
 
 .sticks > .stick {
-  background-image: url(https://i.imgur.com/r9j7fPb.png);
+  background-image: url(https://i.imgur.com/CGKcJ9c.png);
 }
 
 .xbox .stick.pressed {
