@@ -4,7 +4,8 @@
     width: 1024px;
     height: 1240px;
     position: relative;
-    margin: 0 auto; /* Center horizontally */
+    /*    margin-left: -375px;
+        margin-top: -500px;*/
     border-radius: 50%; /* Ensure circular shape */
     background-size: cover; /* Ensure the background image scales correctly */
 }
