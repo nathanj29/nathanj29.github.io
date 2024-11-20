@@ -22,19 +22,19 @@
 
 /* Right stick position indicator */
 .controller.xbox .stick.right {
-    width: 40px; /* Size of the indicator */
-    height: 20px;
+    width: 15px; /* Size of the indicator */
+    height: 15px;
     background: red; /* Indicator color */
-    border-radius: 50%;
+    border-radius: 500%;
     position: absolute;
-    top: 150%; /* Start centered */
-    left: 50%; /* Start centered */
-    transform: translate(-50%, -50%) scale(5); /* Amplify translations 5x */
+    top: 140%; /* Start centered */
+    left: 140%; /* Start centered */
+    transform: translate(-50%, -80%) scale(5); /* Amplify translations 5x */
     transform-origin: center; /* Ensure scaling is centered */
     z-index: 10; /* Ensure it's on top of the background */
 }
 
 /* Add custom scaling to amplify Gamepad Viewer inputs */
 .controller.xbox .stick.right[data-gamepad-translation] {
-    transform: translate(-50%, -50%) scale(5);
+    transform: translate(-2000%, -50%) scale(5);
 }
