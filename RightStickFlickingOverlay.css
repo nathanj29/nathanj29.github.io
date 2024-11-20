@@ -1,8 +1,8 @@
 /* Base container for the right stick graphic */
 .controller.xbox {
     background: url('https://i.imgur.com/kteToPi.png') no-repeat center; /* Your circular background */
-    width: 1000px;
-    height: 1000px;
+    width: 1024px;
+    height: 1240px;
     position: relative;
     margin: 0 auto; /* Center horizontally */
     border-radius: 50%; /* Ensure circular shape */
