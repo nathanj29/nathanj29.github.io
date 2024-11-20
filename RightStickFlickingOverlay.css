@@ -3,11 +3,8 @@
     background: url('https://i.imgur.com/Ruqc72R.png') no-repeat center; /* Your circular background */
     width: 1024px;
     height: 1240px;
-    position: relative;
     /*    margin-left: -375px;
         margin-top: -500px;*/
-    border-radius: 50%; /* Ensure circular shape */
-    background-size: cover; /* Ensure the background image scales correctly */
 }
 
 /* Hide all other elements from the controller */
