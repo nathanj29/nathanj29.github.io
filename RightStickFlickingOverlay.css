@@ -21,17 +21,6 @@
     display: none !important; /* Completely hide irrelevant elements */
 }
 
-/* Scaling container for the right stick movement */
-.controller.xbox .stick-container {
-    position: absolute;
-    width: 1000px; /* Match the background dimensions */
-    height: 1000px;
-    top: 0;
-    left: 0;
-    transform: scale(5); /* Amplify movement range by 5x */
-    transform-origin: center; /* Keep scaling centered */
-}
-
 /* Right stick position indicator */
 .controller.xbox .stick.right {
     width: 20px; /* Size of the indicator */
@@ -41,8 +30,12 @@
     position: absolute;
     top: 50%; /* Start centered */
     left: 50%; /* Start centered */
-    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    transform: translate(-50%, -50%) scale(5); /* Amplify translations 5x */
+    transform-origin: center; /* Ensure scaling is centered */
     z-index: 10; /* Ensure it's on top of the background */
 }
 
-/* Ensure the indicator dynamically moves based on controller input */
+/* Add custom scaling to amplify Gamepad Viewer inputs */
+.controller.xbox .stick.right[data-gamepad-translation] {
+    transform: translate(-50%, -50%) scale(5);
+}
