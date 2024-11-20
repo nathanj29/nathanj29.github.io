@@ -3,7 +3,7 @@
     background: url('https://i.imgur.com/Ruqc72R.png') no-repeat center; /* Your circular background */
     width: 1024px;
     height: 1024px;
-    overflow: hidden; /* Keep the indicator inside the circle */
+    overflow: hidden; /* Ensure no overflow */
     /*    margin-left: -375px;
         margin-top: -500px;*/
 }
@@ -21,6 +21,17 @@
     display: none !important; /* Completely hide irrelevant elements */
 }
 
+/* Scaling container for the right stick movement */
+.controller.xbox .stick-container {
+    position: absolute;
+    width: 1000px; /* Match the background dimensions */
+    height: 1000px;
+    top: 0;
+    left: 0;
+    transform: scale(5); /* Amplify movement range by 5x */
+    transform-origin: center; /* Keep scaling centered */
+}
+
 /* Right stick position indicator */
 .controller.xbox .stick.right {
     width: 20px; /* Size of the indicator */
@@ -30,7 +41,7 @@
     position: absolute;
     top: 50%; /* Start centered */
     left: 50%; /* Start centered */
-    transform: translate(-50%, -50%) scale(5); /* Scale movement range and adjust for perfect centering */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
     z-index: 10; /* Ensure it's on top of the background */
 }
 
