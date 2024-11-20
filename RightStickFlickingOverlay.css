@@ -1,65 +1,38 @@
-/*BEGIN Xbox One Controller Styling*/
+/* Base container for the right stick graphic */
 .controller.xbox {
-    background: url(https://imgur.com/a/kteToPi);
-    height: 1024px;
-    width: 1024px;
-    /*    margin-left: -375px;
-        margin-top: -285px;*/
+    background: url('https://i.imgur.com/kteToPi.png') no-repeat center; /* Your circular background */
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+    margin: 0 auto; /* Center horizontally */
+    border-radius: 50%; /* Ensure circular shape */
+    background-size: cover; /* Ensure the background image scales correctly */
 }
 
-.xbox.white {
-    background: url(xbox-assets/base-white.svgz);
+/* Hide all other elements from the controller */
+.controller.xbox .triggers,
+.controller.xbox .bumpers,
+.controller.xbox .abxy,
+.controller.xbox .dpad,
+.controller.xbox .quadrant,
+.controller.xbox .stick.left,
+.controller.xbox .back,
+.controller.xbox .start,
+.controller.xbox .face {
+    display: none !important; /* Completely hide irrelevant elements */
 }
 
-.custom.disconnected div {
-    display: none;
-}
-
-.xbox.disconnected div {
-    display: none;
-}
-
-.xbox .sticks {
+/* Right stick position indicator */
+.controller.xbox .stick.right {
+    width: 20px; /* Size of the indicator */
+    height: 20px;
+    background: red; /* Indicator color */
+    border-radius: 50%;
     position: absolute;
-    width: 371px;
-    height: 196px;
-    top: 239px;
-    left: 144px;
+    top: 50%; /* Start centered */
+    left: 50%; /* Start centered */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    z-index: 10; /* Ensure it's on top of the background */
 }
 
-.xbox .stick {
-    position: absolute;
-    background: url(https://imgur.com/mbeEeni.png);
-    background-position: 0 0;
-    height: 83px;
-    width: 84px;
-}
-
-.sticks > .stick {
-  background-image: url(https://i.imgur.com/IbSPTWW.png);
-}
-
-.xbox .stick.pressed {
-    background-position: 0 0;
-}
-
-.xbox .stick.left {
-    top: -1px;
-    left: -1px;
-}
-
-.xbox .stick.right {
-  background-position: -85px 0 !important;
-    top: 113px;
-    left: 288px;
-}
-
-.xbox.half {
-    margin-top: -315px;
-}
-
-.xbox {
-    background: no-repeat center;
-}
-
-/*END Xbox One Controller Styling*/
+/* Ensure the indicator dynamically moves based on controller input */
