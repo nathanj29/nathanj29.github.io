@@ -1,0 +1,65 @@
+/*BEGIN Xbox One Controller Styling*/
+.controller.xbox {
+    background: url(https://imgur.com/a/kteToPi);
+    height: 1024px;
+    width: 1024px;
+    /*    margin-left: -375px;
+        margin-top: -285px;*/
+}
+
+.xbox.white {
+    background: url(xbox-assets/base-white.svgz);
+}
+
+.custom.disconnected div {
+    display: none;
+}
+
+.xbox.disconnected div {
+    display: none;
+}
+
+.xbox .sticks {
+    position: absolute;
+    width: 371px;
+    height: 196px;
+    top: 239px;
+    left: 144px;
+}
+
+.xbox .stick {
+    position: absolute;
+    background: url(https://imgur.com/mbeEeni.png);
+    background-position: 0 0;
+    height: 83px;
+    width: 84px;
+}
+
+.sticks > .stick {
+  background-image: url(https://i.imgur.com/IbSPTWW.png);
+}
+
+.xbox .stick.pressed {
+    background-position: 0 0;
+}
+
+.xbox .stick.left {
+    top: -1px;
+    left: -1px;
+}
+
+.xbox .stick.right {
+  background-position: -85px 0 !important;
+    top: 113px;
+    left: 288px;
+}
+
+.xbox.half {
+    margin-top: -315px;
+}
+
+.xbox {
+    background: no-repeat center;
+}
+
+/*END Xbox One Controller Styling*/
