@@ -208,8 +208,6 @@
   background-position: -85px 0 !important;
     top: 113px;
     left: 288px;
-    transform: scale(-1, -1);
-    transform-origin: center;
 }
 
 .xbox .dpad {
