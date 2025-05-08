@@ -1,6 +1,6 @@
 /*BEGIN Xbox One Controller Styling*/
 .controller.xbox {
-    background: url(https://www.youtube.com/watch?v=iFDEewK1mSk);
+    background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWZiaHI4Mzk0eGt2b28xNWRzZWcwcWcyMm02aG05bDl1M2xsbDRobCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohhwNqFMnb7wZgNnq/giphy.gif);
     height: 630px;
     width: 750px;
     /*    margin-left: -375px;
@@ -29,7 +29,7 @@
 .xbox .trigger {
     width: 89px;
     height: 122px;
-    background: url(https://aws.peksa.net/peksas-uber-snow-tutorial-covers-everything.mp4);
+    background: url(https://imgur.com/XhltNmN);
     opacity: 0;
 }
 
