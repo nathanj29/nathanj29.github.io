@@ -5,51 +5,38 @@
     body, html {
       margin: 0;
       padding: 0;
-      height: 100%;
-      background: black;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
     }
-
-    .container {
-      position: relative;
-      width: 750px;
-      height: 630px;
-    }
-
     video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 750px;
-      height: 630px;
+      position: fixed;
+      top: 0; left: 0;
+      min-width: 100%;
+      min-height: 100%;
       object-fit: cover;
       z-index: -1;
     }
-
     iframe {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 750px;
-      height: 630px;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
       border: none;
     }
   </style>
 </head>
 <body>
 
-<div class="container">
-  <video autoplay loop muted>
-    <source src="https://nathanj29.github.io/twerk%20emote%20full%20reso.mp4" type="video/mp4">
-  </video>
+<video autoplay loop muted>
+  <source src="https://nathanj29.github.io/twerk%20emote%20full%20reso.mp4" type="video/mp4">
+</video>
 
-  <iframe
-    src="https://app.gpv.gg/?p=1&editcss=https%3A%2F%2Fnathanj29.github.io%2FXboxUninvertRightStick.css&map=%7B%22mapping%22%3A%5B%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%222%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22-%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%222%22%7D%2C%22negative%22%3A%7B%7D%7D%2C%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%223%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22%2B%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%223%22%7D%2C%22negative%22%3A%7B%7D%7D%5D%7D"
-    allowfullscreen
-  ></iframe>
-</div>
+<iframe
+  src="https://app.gpv.gg/?p=1&editcss=https%3A%2F%2Fnathanj29.github.io%2FXboxUninvertRightStick.css&map=%7B%22mapping%22%3A%5B%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%222%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22-%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%222%22%7D%2C%22negative%22%3A%7B%7D%7D%2C%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%223%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22%2B%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%223%22%7D%2C%22negative%22%3A%7B%7D%7D%5D%7D"
+  width="750"
+  height="630"
+  frameborder="0"
+  allowfullscreen
+></iframe>
 
 </body>
 </html>
