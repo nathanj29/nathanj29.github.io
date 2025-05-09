@@ -26,7 +26,7 @@ iframe {
 </head>
 <body>
 <video autoplay loop muted>
-  <source src="https://drive.google.com/file/d/18w1jMcJ7eawcTVNlxv0DZx2Zl5TQ4GS8/view?usp=sharing" type="video/mkv">
+  <source src="https://nathanj29.github.io/twerk%20emote%20full%20reso.mp4" type="video/mp4">
 </video>
 
 <iframe
@@ -36,5 +36,6 @@ iframe {
   frameborder="0"
   allowfullscreen
 ></iframe>
+
 </body>
 </html>
