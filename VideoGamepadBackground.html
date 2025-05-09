@@ -5,21 +5,26 @@
 body, html {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black; /* optional, in case of letterboxing */
   overflow: hidden;
 }
 video {
-  position: fixed;
+  position: absolute;
   top: 0; left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 750px;
+  height: 630px;
   object-fit: cover;
   z-index: -1;
 }
 iframe {
   position: absolute;
   top: 0; left: 0;
-  width: 100%;
-  height: 100%;
+  width: 750px;
+  height: 630px;
   border: none;
 }
 </style>
