@@ -2,53 +2,46 @@
 <html>
 <head>
 <style>
-body, html {
+html, body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
-  background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
-}
-
-.stack {
-  position: relative;
-  width: 750px;
-  height: 630px;
+  background: transparent;
 }
 
 video {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 750px;
-  height: 630px;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
 }
 
 iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 750px;
   height: 630px;
+  transform: translate(-50%, -50%);
   border: none;
 }
 </style>
 </head>
 <body>
 
-<div class="stack">
-  <video autoplay loop muted>
-    <source src="https://nathanj29.github.io/twerk%20emote%20full%20reso.mp4" type="video/mp4">
-  </video>
+<video autoplay muted loop>
+  <source src="https://nathanj29.github.io/twerk%20emote%20full%20reso.mp4" type="video/mp4">
+</video>
 
-  <iframe
-    src="https://app.gpv.gg/?p=1&editcss=https%3A%2F%2Fnathanj29.github.io%2FXboxUninvertRightStick.css&map=%7B%22mapping%22%3A%5B%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%222%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22-%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%222%22%7D%2C%22negative%22%3A%7B%7D%7D%2C%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%223%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22%2B%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%223%22%7D%2C%22negative%22%3A%7B%7D%7D%5D%7D"
-    allowfullscreen
-  ></iframe>
-</div>
+<iframe
+  allowtransparency="true"
+  src="https://app.gpv.gg/?p=1&editcss=https%3A%2F%2Fnathanj29.github.io%2FXboxUninvertRightStick.css%3Ftransparentbg&map=%7B%22mapping%22%3A%5B%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%222%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22-%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%222%22%7D%2C%22negative%22%3A%7B%7D%7D%2C%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%223%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22%2B%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%223%22%7D%2C%22negative%22%3A%7B%7D%7D%5D%7D">
+</iframe>
 
 </body>
 </html>
