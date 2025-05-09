@@ -1,37 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black; /* optional, in case of letterboxing */
-  overflow: hidden;
-}
-video {
-  position: fixed;
-  top: 0; left: 0;
-  width: 750px;
-  height: 630px;
-  object-fit: cover;
-  z-index: -1;
-}
-.controller-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 750px;
-  width: 630px;
-  position: relative;
-  z-index: 1;
-}
-</style>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 750px;
+      height: 630px;
+      object-fit: cover;
+      z-index: -1;
+    }
+    iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 750px;
+      height: 630px;
+      border: none;
+    }
+  </style>
 </head>
 <body>
+
 <video autoplay loop muted>
   <source src="https://nathanj29.github.io/twerk%20emote%20full%20reso.mp4" type="video/mp4">
 </video>
