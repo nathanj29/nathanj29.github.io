@@ -2,7 +2,7 @@
 <html>
 <head>
   <style>
-    html, body {
+    body, html {
       margin: 0;
       padding: 0;
       height: 100vh;
@@ -11,34 +11,51 @@
       align-items: center;
       background: black;
     }
-
-    .masked-video {
+    .container {
+      position: relative;
       width: 750px;
       height: 630px;
-      -webkit-mask-image: url('https://nathanj29.github.io/controller-mask-transparent.png');
-      -webkit-mask-repeat: no-repeat;
-      -webkit-mask-size: contain;
-      -webkit-mask-position: center;
-
-      mask-image: url('https://nathanj29.github.io/controller-mask-transparent.png');
-      mask-repeat: no-repeat;
-      mask-size: contain;
-      mask-position: center;
     }
-
     video {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      z-index: -1;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
     }
   </style>
 </head>
 <body>
 
-<div class="masked-video">
+<div class="container">
   <video autoplay loop muted>
     <source src="https://nathanj29.github.io/twerk%20emote%20full%20reso.mp4" type="video/mp4">
   </video>
+
+  <iframe
+    src="https://app.gpv.gg/?p=1&editcss=https%3A%2F%2Fnathanj29.github.io%2FXboxUninvertRightStick.css"
+    allowfullscreen>
+  </iframe>
+
+  <img class="overlay" src="https://nathanj29.github.io/controller-mask-transparent.png" alt="Controller mask overlay">
 </div>
 
 </body>
