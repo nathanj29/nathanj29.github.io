@@ -24,7 +24,17 @@
       transform: translate(-50%, -50%);
       object-fit: cover;
       object-position: center;
-      z-index: -1;
+      z-index: -2;
+    }
+
+    .video-bottom {
+      z-index: -3;
+    }
+
+    .video-top {
+      mix-blend-mode: screen;
+      z-index: -2;
+      pointer-events: none;
     }
 
     iframe {
@@ -43,10 +53,17 @@
 <body>
 
 <div class="wrapper">
-  <video autoplay muted loop>
-    <source src="https://files.catbox.moe/5bjjy3.mp4"> /* background video behind the controller buttons */
+  <!-- Bottom video (base layer) -->
+  <video class="video-bottom" autoplay muted loop>
+    <source src="https://nathanj29.github.io/twerk%20emote%20full%20reso.mp4" type="video/mp4">
   </video>
 
+  <!-- Top video with blend mode (overlay with black bg) -->
+  <video class="video-top" autoplay muted loop>
+    <source src="https://files.catbox.moe/5bjjy3.mp4" type="video/mp4">
+  </video>
+
+  <!-- Controller overlay -->
   <iframe
     src="https://app.gpv.gg/?p=1&editcss=https%3A%2F%2Fnathanj29.github.io%2FXboxUninvertRightStick.css&map=%7B%22mapping%22%3A%5B%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%222%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22-%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%222%22%7D%2C%22negative%22%3A%7B%7D%7D%2C%7B%22targetType%22%3A%22axes%22%2C%22target%22%3A%223%22%2C%22disabled%22%3Afalse%2C%22axesConfig%22%3A%7B%22type%22%3A%22stick%22%2C%22lowValue%22%3A%221%22%2C%22highValue%22%3A%22-1%22%7D%2C%22choiceType%22%3A%22%22%2C%22positive%22%3A%7B%22choiceOperand%22%3A%22%2B%22%2C%22choiceType%22%3A%22axes%22%2C%22choice%22%3A%223%22%7D%2C%22negative%22%3A%7B%7D%7D%5D%7D"
     frameborder="0"
